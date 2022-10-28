@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+Guardar película
+{% endblock title %}
+
+{% block content %}
+
+<div class="content">
+    <div class="box">
+      <h2>Guardar película</h2>
+      
+        <form action ="" method = "POST">{% csrf_token %}
+            {{formulario}}
+            <input type="submit" value="registrar">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
